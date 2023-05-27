@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
