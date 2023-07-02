@@ -13,9 +13,11 @@ export class NewsItem extends Component {
                     <p className="card-text"><small className="text-body-secondary">By {!author ? "Unknown" : author} on {(new Date(time)).toUTCString()} </small></p>
                     <a rel='noreferrer' href={newsUrl} className="btn btn-dark" target='blank'>Read More</a>
                 </div>
-                <span className="position-absolute top-0 translate-middle badge rounded-pill bg-danger" style={{left:"90%",zIndex:1}}>
+                <div style={{display:'flex', position: 'absolute', right: '0', justifyContent: 'flex-end'}}>
+                <span className="badge rounded-pill bg-danger">
                     {source}
                 </span>
+                </div>
             </div>
         )
     }
