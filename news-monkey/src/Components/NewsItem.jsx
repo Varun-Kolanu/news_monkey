@@ -1,9 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
+export const NewsItem = (props) => {
 
-    render() {
-        let { title, description, imageUrl, newsUrl, author, time, source } = this.props;
+        let { title, description, imageUrl, newsUrl, author, time, source } = props;
         return (
             <div className="card my-3">
                 <img src={imageUrl} className="card-img-top" alt="Sports" />
@@ -20,7 +19,6 @@ export class NewsItem extends Component {
                 </div>
             </div>
         )
-    }
 }
 
 export default NewsItem
